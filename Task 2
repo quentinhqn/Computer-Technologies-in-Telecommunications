@@ -12,5 +12,29 @@ My code:
 
 user@user-VirtualBox:~/erasmus$ ping google.fr > ping.txt
 
+To analyze the code I will delete useless lines using sed
+
+user@user-VirtualBox:~/erasmus$ sed '1d' ping.csv ///delete the first line 
+
+cat file.csv | awk -F"," {'print $3'} > required_out.csv    /// to keep only time so we have column of number 
+
+after that he only stay time we can do a average of each line 
+
+user@user-VirtualBox:~/erasmus$ awk 'NR>=1 && NR<=8 {S+=$1} END{print S}' <  required_out.csv    /// We got the summs of all time
+252.8
+
+
+Now we just have to divide by the number of value
+
+user@user-VirtualBox:~/erasmus$ awk 'NR>=1 && NR<=8 {S+=$1} END{print S}' <  required_out.csv 
+252.8
+
+
+user@user-VirtualBox:~/erasmus$ awk '{print ($1)/8}' final.txt     /// So we got average of time .
+31.6
+
+
+
+
 
 
