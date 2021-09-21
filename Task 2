@@ -1,1 +1,16 @@
-hello world
+For this task we search some data.
+
+So we use the command ping to ping google.fr and get some data we use redirection to get data in a file .txt 
+I put the photo in another file. I don t know how to put some photo :)
+
+To clean the file we can delete every letter from the file or juste with the position of everything keep the caractere that we want or we can cout the space and only keep things 
+after X space 
+
+
+
+My code:
+
+user@user-VirtualBox:~/erasmus$ ping google.fr > ping.txt
+
+
+
